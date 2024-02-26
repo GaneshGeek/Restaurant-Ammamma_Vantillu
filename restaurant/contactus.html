@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammamma Vantillu</title>
+    <script src="https://kit.fontawesome.com/b5e8ad20d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+    <!-- navbar section -->
+    <section class="navbar">
+        <div>
+            <img  class="navbar-logo" src="images/logo1.png" alt="logo" height="60px" width="60px">
+        </div>
+        <div>
+            <ul class="navbar-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./tablebooking.html">Table Booking</a> </li>
+                <li><a href="#">Locations</a>
+                    <ul>
+                        <li>Proddutur</li>
+                        <li>Kadapa</li>
+                        <li>Jammalmadugu</li>
+                    </ul>
+                </li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./aboutsus.html">About us</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end navbar section  -->
+
+    <!-- contact cntent -->
+    <section class="contact-container">
+        <div>
+            <h2>Contact Ammamma Vantillu</h2>
+            <p>Welcome to Ammamma Vantillu, where the heart of authentic home-cooked cuisine awaits you. Whether you have a question, a special request, or simply want to share your dining experience with us, we'd love to hear from you.</p>
+        </div>
+
+        <div class="list">
+            <h2>Contact Information:</h2>
+            <ul type="square">
+                <li><h3>Address:</h3></li>
+                <ul>
+                    <li><p>Ammamma Vantillu</p></li>
+                    <li><p>Venketeswara street</p></li>
+                    <li><p>Andhra Pradesh,516360</p></li>
+                </ul>
+                <li><h3>Phone:</h3></li>
+                <ul>
+                    <li><p>For Reservations & Inquiries: +91 98561 4321</p></li>
+                </ul>
+                
+                <li><h3>Email:</h3></li>
+                <ul>
+                    <li><p>General Inquiries: info@ammammavantillu.com</p></li>
+                    <li><p> Reservations: reservations@ammammavantillu.com</p></li>
+                </ul>
+            </ul>
+        </div>
+        
+        <div>
+            <h2>Opening Hours:</h2>
+            <p>Monday to Sunday <br>
+             Lunch: 12:00 PM - 3:00 PM <br>
+             Dinner: 6:00 PM - 10:00 PM</p>
+        </div>
+       
+        <div>
+            <h2>Feedback and Suggestions:</h2>
+            <p>We value your feedback, as it helps us enhance your dining experience. If you have any suggestions, comments, or special requests, please fill out the form below, and our team will get back to you as soon as possible.</p>
+        </div>
+        <div>
+          <h2>Send Us a Message</h2>
+          <form class="form" action="/restaurents/index.html" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit" onclick="getalert()">Send Message</button>
+          </form>
+          </div>
+    </section>
+     <!-- footer section -->
+     <section>
+        <footer class="footer">
+            <div>
+                <ul class="item">
+                    <h1>Follow Us</h1>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href=""><i class="fa-brands fa-discord"></i>Discord</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="item">
+                    <h1>More</h1>
+                    <li><a href=""><i class="fa-solid fa-virus-covid"></i>COVID-19</a></li>
+                    <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i>History</a></li>
+                    <li><a href=""><i class="fa-solid fa-handshake-angle"></i>Help</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-up-right-dots"></i>Careers</a></li>
+                </ul>
+            </div>
+        </footer>
+        <footer>
+            <div class="copy">
+                <p>@copyrights;2024 Ammamma Vantillu. All Rights Reserved</p>
+            </div>
+        </footer>
+        </section>
+        <!-- end footer section -->
+    </body>
+    <script>
+         function getalert()
+         {
+            alert("we received your message, our Team will get back to you sir...")
+         }
+    </script>
+    </html>

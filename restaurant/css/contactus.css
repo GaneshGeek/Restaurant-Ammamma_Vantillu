@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+/* navbar section  */
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF2E63;
+}
+.navbar-logo{
+border-radius: 100%;
+margin:0px 5px
+}
+.navbar-items {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar-items li a{
+    text-decoration: none;
+    color:black;
+}
+.navbar-items li{
+    list-style: none;
+    margin: 10px;
+    /* padding: 10px; */
+}
+.navbar-items li:hover ul{
+    display:block;
+    position: absolute;
+    background-color: white;
+
+}
+.navbar-items li> ul{
+    display: none;
+}
+/* end navbar section */
+
+
+/* contact section */
+
+.contact-container div{
+ margin:10px 0px;
+ padding: 0px 5px;
+ /* border: 2px solid black; */
+ 
+}
+
+.contact-container div > h2,p {
+    color:black;
+    padding-bottom: 8px;
+}
+
+.list h3,p{
+    padding: 5px 0px;
+}
+.form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.form label , button{
+    margin: 8px 0px;
+}
+.form input,
+textarea {
+  width:38%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+.form button{
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+form button:hover{
+        background-color: #0056b3;
+}
+
+/* end contact section */
+
+/* footer  */
+.footer {
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    background-color: #FF2E63;
+}
+.item li {
+    list-style: none;
+    padding:8px;
+}
+.item li a{
+    text-decoration: none;
+    color: black;
+}
+.item h1{
+    margin:10px 10px;
+    color: white;
+}
+.item li > a > i{
+    margin:0px 10px;
+}
+.copy{
+    padding:5px 0;
+    text-align: center;
+    background-color: #FF2E63;
+}
+/* end footer */
+
+@media screen and (max-width:560px){
+    
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-items{
+        flex-direction: column;
+    }
+    .contact-container{
+        width:100%
+    }
+    .form{
+        width:100%;
+    }
+    .form input,
+textarea{
+    width:60%;
+}
+}
+@media screen and (min-width:561px) and (max-width:720px){
+.form{
+    width:100%;
+}
+.form input,textarea{
+    width:60%;
+}
+    
+}
+@media screen and (min-width:721px) and (max-width:1080px){
+    .form{
+        width:100%;
+    }
+    .form input,textarea{
+        width:45%;
+    }
+        
+    }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammamma Vantillu Table Booking</title>
+    <link rel="stylesheet" href="./css/tablebooking.css">
+    <script src="https://kit.fontawesome.com/b5e8ad20d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar section -->
+    <section class="navbar">
+        <div>
+            <img  class="navbar-logo" src="./images/logo1.png" alt="logo" height="60px" width="60px">
+        </div>
+        <div>
+            <ul class="navbar-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./tablebooking.html">Table Booking</a> </li>
+                <li><a href="#">Locations</a>
+                    <ul>
+                        <li>Proddutur</li>
+                        <li>Kadapa</li>
+                        <li>Jammalmadugu</li>
+                    </ul>
+                </li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./aboutsus.html">About us</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end navbar section -->
+
+    <!-- table booking form -->
+    <section>
+        <div class="form-container">
+            <div>
+                <H1 class="form-heading">Book your Table Here!</H1>
+            </div>
+            <form class ="form"action="./successfulbooktable.html" method="post" >
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="eg:Johnny Wick" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="eg:johnnywick@gmail.com" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="99999 88888">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="party-size">Party Size:</label>
+                <select id="party-size" name="party-size" required>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5">5 people</option>
+                </select>
+                <button type="submit" onclick="getalert()">Book Table</button>
+            </form>
+        </div>
+    </section>
+    <!-- end table booking form -->
+    <!-- footer section -->
+    <section>
+        <footer class="footer">
+            <div>
+                <ul class="item">
+                    <h1>Follow Us</h1>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href=""><i class="fa-brands fa-discord"></i>Discord</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="item">
+                    <h1>More</h1>
+                    <li><a href=""><i class="fa-solid fa-virus-covid"></i>COVID-19</a></li>
+                    <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i>History</a></li>
+                    <li><a href=""><i class="fa-solid fa-handshake-angle"></i>Help</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-up-right-dots"></i>Careers</a></li>
+                </ul>
+            </div>
+        </footer>
+        <footer>
+            <div class="copy">
+                <p>@copyrights;2024 Ammamma Vantillu. All Rights Reserved</p>
+            </div>
+        </footer>
+        </section>
+        <!-- end footer section -->
+
+
+        <script>
+            function getalert()
+            {
+                alert('You Have Successfully Booked Your Table.')
+            }
+        </script>
+
+        
+</body>
+</html>
